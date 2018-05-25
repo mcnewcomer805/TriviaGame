@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Basic Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</head>
+
+    <script>
+    
+    var wins = 0;
+    var losses = 0;
+    var guesses = 9;
+    var options = ["a", "b", "c"];
+    var lettersArray =[];
+
+    var DocuserChoice = document.getElementById("userChoice");
+    var DoccompChoice = document.getElementById("compChoice");
+    var Docwins = document.getElementById("wins");
+    var Doclosses = document.getElementById("losses");
+    var Docguesses = document.getElementById("guesses");
+    var DocAllguesses = document.getElementById("lettersArray");
+    
+    </script>
+
+
+<body>
+    <div id="game">
+        <p>Time Remaining:</p>
+        <p>You chose:  <span id = "userChoice"></span ></p>
+        <p>The computer chose:  <span  id = "compChoice"></span ></p>
+        <p>Wins: <span  id = "wins"></span ></p> 
+        <!-- <p>Losses: <span  id = "losses"></span > </p>
+        <p>Guesses:  <span  id = "guesses"></span ></p>
+        <p>Previous Guesses:  <span  id = "lettersArray"></span ></p> -->
+      </div>  
+</body>
+</html>
